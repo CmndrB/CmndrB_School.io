@@ -11,6 +11,23 @@ body {
 .classy {
    text-indent: 10px;
 }
+
+div{
+  margin-bottom: 50px;
+}
+
+span{
+  width: 100px;
+  height: 50px;
+  padding-top: 5px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  border-style: solid;
+  border-color: blue;
+  border-width: 5px;
+  background-color: yellow;
+}
 /* external css is imported into html using the <link> tag in the <head> section, as shown below.
 
   <head>
