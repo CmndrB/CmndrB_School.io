@@ -51,7 +51,10 @@ img[alt="dog icon"]{
   position: relative;
   right: 5px;
   bottom: 150px;
+}
 
+#notused{
+  bacground-color: orange;
 }
 /* external css is imported into html using the <link> tag in the <head> section, as shown below.
 
