@@ -56,6 +56,12 @@ img[alt="dog icon"]{
 #positionMe {
   bacground-color: orange;
 }
+
+img[alt="bird icon"]{
+   position: absolute;
+  top: 50px;
+  left: 250px;
+}
 /* external css is imported into html using the <link> tag in the <head> section, as shown below.
 
   <head>
