@@ -49,8 +49,8 @@ img[alt="cat icon"]{
 
 img[alt="dog icon"]{
   position: relative;
-  left: 5px;
-  top: 150px;
+  right: 5px;
+  bottom: 150px;
 
 }
 /* external css is imported into html using the <link> tag in the <head> section, as shown below.
