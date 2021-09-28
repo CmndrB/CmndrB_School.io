@@ -41,7 +41,7 @@ span.c{
   display: inline-block;
 }
 
-img[alt=”cat icon”]{
+img[cat icon]{
   position: fixed;
   bottom: 0;
   right: 0;
