@@ -55,6 +55,7 @@ img[alt="dog icon"]{
 
 #positionMe {
   bacground-color: orange;
+  position: relative;
 }
 
 img[alt="bird icon"]{
