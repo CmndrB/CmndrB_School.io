@@ -54,7 +54,7 @@ img[alt="dog icon"]{
 }
 
 #positionMe {
-  bacground-color: orange;
+  bacground-color: orange !important;
 }
 /* external css is imported into html using the <link> tag in the <head> section, as shown below.
 
