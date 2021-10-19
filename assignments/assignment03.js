@@ -52,6 +52,6 @@ function subtract1 (elem) {
 
 // create an "clear" function
 function clear (elem) {
-  elem.children[2].innerHTML = "-";
+  elem.children[2].innerHTML = "-"
   }
 }
