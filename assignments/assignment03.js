@@ -29,7 +29,7 @@ for (let i=1; i<=18; i++) {
 //identify totals row
 elem[19] = document.getElementById("totals");
 //add all par scores
-elem[19].children[1].innerHTML = 18  4;
+elem[19].children[1].innerHTML = 18 *4;
 
 // create an "add1" function
 function add1 (elem) {
