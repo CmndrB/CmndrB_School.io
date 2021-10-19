@@ -26,6 +26,11 @@ for (let i=1; i<=18; i++) {
   elem[i].children[4].children[2].onclick = function(){clear(elem[i])};
 }
 
+//identify totals row
+elem[19] = document.getelementById("totals");
+//add all par scores
+elem[19].children[1].innerHTML = 18  4;
+
 // create an "add1" function
 function add1 (elem) {
   if(elem.children[2].innerHTML == "-") { 
