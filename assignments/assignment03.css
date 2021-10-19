@@ -1,2 +1,8 @@
 /* center-align table columns */
 th, td {text-align: center;}
+.btn-success {
+  background-color: red;
+}
+.btn-failure {
+  background-color: green;
+}
