@@ -24,6 +24,10 @@ for (let i=1; i<=18; i++) {
   elem[i].children[4].children[1].onclick = function(){subtract1(elem[i]);};
 }
 
+for (let i=1; i<=18; i++) {
+  elem[i].children[4].children[2].onclick = function(){clear(elem[i]);};
+}
+
 // create an "add1" function
 function add1 (elem) {
   if(elem.children[2].innerHTML == "-") 
@@ -47,7 +51,7 @@ function subtract1 (elem) {
 }
 
 // create an "clear" function
-/*function clear (elem) {
+function clear (elem) {
   elem.children[2].innerHTML = "-";
   }
-}*/
+}
