@@ -64,6 +64,20 @@ function over (elem){
   elem.children[3].innerHTML = elem.children[2].innerHTML - elem.children[1].innerHTML;
 }
 
+//create function to add scores
+function scoretotal (){
+  let total = 0;
+  let count = 0;
+  for (let i=1; i<=18; i++) {
+    if (elem[i].children[2].innerHTML != "-") {
+      total += elem[i].children[2].innerHTML;
+      count ++;
+    }
+  }
+  if (count =>18) {
+    over (elem[19]);
+  }
+}
 
 // create an "clear" function
 function clear (elem) {
