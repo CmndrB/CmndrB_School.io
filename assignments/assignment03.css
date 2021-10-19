@@ -3,6 +3,6 @@ th, td {text-align: center;}
 .btn-success {
   background-color: red;
 }
-.btn-failure {
+.btn-danger {
   background-color: green;
 }
