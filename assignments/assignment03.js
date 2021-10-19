@@ -35,6 +35,7 @@ function add1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore + 1;
   }
+  elem.chilldren[3].innerHTML = Number.parseInt(elem.children[2].innerHTML) - Number.parseInt(elem.children[1].innerHTML);
 }
 
 // create an "subtract1" function
@@ -46,6 +47,7 @@ function subtract1 (elem) {
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore - 1;
   }
+  elem.chilldren[3].innerHTML = Number.parseInt(elem.children[2].innerHTML) - Number.parseInt(elem.children[1].innerHTML);
 }
 
 // create an "clear" function
