@@ -16,9 +16,12 @@ for(let i=1; i<=18; i++) {
   // console.log(i);
   elem[i] = document.getElementById(i.toString());
   elem[i].children[4].children[0].onclick = function(){add1(elem[i]);};
-  elem[i].children[4].children[1].onclick = function(){subtract1(elem[i]);};
-  /*elem[i].children[4].children[2].onclick = function(){clear(elem[i]);};*/
+  /*elem[i].children[4].children[1].onclick = function(){subtract1(elem[i]);};
+  elem[i].children[4].children[2].onclick = function(){clear(elem[i]);};*/
 }
+
+elem[19] = document.getElementById("20");
+elem[19].onclick = function(){subtract1(elem[19]);};
 
 // create an "add1" function
 function add1 (elem) {
