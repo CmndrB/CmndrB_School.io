@@ -20,7 +20,7 @@ for(let i=1; i<=18; i++) {
   elem[i].children[4].children[2].onclick = function(){clear(elem[i]);};*/
 }
 
-elem[19] = document.getElementById("21")
+elem[19] = document.getElementById("21");
 elem[19].onclick = function(){subtract1(elem[19]);};
 
 // create an "add1" function
@@ -35,7 +35,7 @@ function add1 (elem) {
 }
 
 // create an "subtract1" function
-/*function subtract1 (elem) {
+function subtract1 (elem) {
   if(elem.children[2].innerHTML == "-") 
     elem.children[2].innerHTML = "-1";
   else {
@@ -46,7 +46,7 @@ function add1 (elem) {
 }
 
 // create an "clear" function
-function clear (elem) {
+/*function clear (elem) {
   elem.children[2].innerHTML = "-";
   }
 }*/
