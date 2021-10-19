@@ -29,8 +29,8 @@ function add1 (elem) {
 
 // create an "subtract1" function
 function subtract1 (elem) {
-  if(elem.children[2].innerHTML == "1") 
-    elem.children[2].innerHTML = "-";
+  if(elem.children[2].innerHTML == "-") 
+    elem.children[2].innerHTML = "-1";
   else {
     let currentScore = elem.children[2].innerHTML;
     currentScore = Number.parseInt(currentScore);
