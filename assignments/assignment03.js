@@ -63,7 +63,16 @@ function subtract1 (elem) {
 
 //create over function
 function over (elem){
-  elem.children[3].innerHTML = elem.children[2].innerHTML - elem.children[1].innerHTML;
+  let overTotal = 0;
+  if(elem.children[0] == "TOTALS"){
+    for (let i=1; i<=18; i++) {
+        overTotal += elem[i].children[3].innerHTML;
+    }
+    elem.children[3].innerHTML = overTotal;
+  }
+  else{
+    elem.children[3].innerHTML = elem.children[2].innerHTML - elem.children[1].innerHTML;
+  }
 }
 
 //create function to add scores
