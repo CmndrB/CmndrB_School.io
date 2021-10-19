@@ -23,7 +23,7 @@ for (let i=1; i<=18; i++) {
 }
 
 for (let i=1; i<=18; i++) {
-  elem[i].children[4].children[2].onclick = function(){clear(elem[i]);};
+  elem[i].children[4].children[2].onclick = function(){clear(elem[i])};
 }
 
 // create an "add1" function
