@@ -14,6 +14,8 @@ for(let i=1; i<=18; i++) {
   // console.log(i);
   elem[i] = document.getElementById(i.toString());
   elem[i].children[4].children[0].onclick = function(){add1(elem[i]);};
+  elem[i].children[4].children[1].onclick = function(){subtract1(elem[i]);};
+  elem[i].children[4].children[2].onclick = function(){clear(elem[i]);};
 }
 
 // create an "add1" function
@@ -39,7 +41,7 @@ function subtract1 (elem) {
 }
 
 // create an "clear" function
-/*function clear (elem) {
+function clear (elem) {
   elem.children[2].innerHTML = "-";
   }
-}*/
+}
