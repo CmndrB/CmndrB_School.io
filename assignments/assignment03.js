@@ -37,3 +37,9 @@ function subtract1 (elem) {
     elem.children[2].innerHTML = currentScore - 1;
   }
 }
+
+// create an "clear" function
+function clear (elem) {
+  elem.children[2].innerHTML = "-";
+  }
+}
