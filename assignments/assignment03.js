@@ -86,7 +86,7 @@ function scoretotal (){
     }
   }
   elem[19].children[2].innerHTML =total;
-  if (count =>18) {
+  if (count == 18) {
     over (elem[19]);
   }
 }
