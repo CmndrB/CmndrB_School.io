@@ -81,8 +81,8 @@ function scoretotal (){
   let count = 0;
   for (let i=1; i<=18; i++) {
     if (elem[i].children[2].innerHTML != "-") {
-      total += elem[i].children[2].innerHTML;
-      count ++;
+      total += Number.parseInt(elem[i].children[2].innerHTML);
+      count += 1;
     }
   }
   elem[19].children[2].innerHTML =total;
