@@ -30,12 +30,12 @@ for (let i=1; i<=18; i++) {
 function add1 (elem) {
   if(elem.children[2].innerHTML == "-") { 
     elem.children[2].innerHTML = "1";
-    elem.chilldren[3].innerHTML = elem.children[2].innerHTML - elem.children[1].innerHTML;}
+    }
   else {
     let currentScore = elem.children[2].innerHTML;
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore + 1;
-    elem.chilldren[3].innerHTML = elem.children[2].innerHTML - elem.children[1].innerHTML;
+   
   }
   elem.chilldren[3].innerHTML = elem.children[2].innerHTML - elem.children[1].innerHTML;
 }
@@ -44,12 +44,12 @@ function add1 (elem) {
 function subtract1 (elem) {
   if(elem.children[2].innerHTML == "-") {
     elem.children[2].innerHTML = "-1";
-    elem.chilldren[3].innerHTML = elem.children[2].innerHTML - elem.children[1].innerHTML;}
+    }
   else {
     let currentScore = elem.children[2].innerHTML;
     currentScore = Number.parseInt(currentScore);
     elem.children[2].innerHTML = currentScore - 1;
-    elem.chilldren[3].innerHTML = elem.children[2].innerHTML - elem.children[1].innerHTML;
+   
   }
   elem.chilldren[3].innerHTML = elem.children[2].innerHTML - elem.children[1].innerHTML;
 }
