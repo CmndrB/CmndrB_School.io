@@ -37,7 +37,7 @@ function add1 (elem) {
     elem.children[2].innerHTML = currentScore + 1;
    
   }
-  elem.chilldren[3].innerHTML = elem.children[2].innerHTML - 4;
+  elem.chilldren[3].innerHTML = 4;
 }
 
 // create an "subtract1" function
@@ -51,7 +51,7 @@ function subtract1 (elem) {
     elem.children[2].innerHTML = currentScore - 1;
    
   }
-  elem.chilldren[3].innerHTML = elem.children[2].innerHTML - 4;
+  elem.chilldren[3].innerHTML = 3;
 }
 
 // create an "clear" function
