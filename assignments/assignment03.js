@@ -61,8 +61,8 @@ function over (elem){
 
 
 // create an "clear" function
-function clear (elem) {
+/*function clear (elem) {
   elem.children[2].innerHTML = "-";
   elem.children[3].innerHTML = "-";
   }
-}
+}*/
