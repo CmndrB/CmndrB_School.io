@@ -43,6 +43,7 @@ function add1 (elem) {
    
   }
   over(elem);
+  scoretotal();
 }
 
 // create an "subtract1" function
@@ -57,6 +58,7 @@ function subtract1 (elem) {
    
   }
   over(elem);
+  scoretotal();
 }
 
 //create over function
