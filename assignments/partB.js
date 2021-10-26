@@ -73,7 +73,7 @@ appendTableRow5(table2b,"21","22","23","24","25");
     divs[5] = "errConfirm";
 
     // function: validate() ---------------------------------------------
-    function validate() {
+    function validate(z) {
         // initialize input array
         var inputs = new Array();
         inputs[0] = document.getElementById('first').value;
@@ -91,29 +91,75 @@ appendTableRow5(table2b,"21","22","23","24","25");
         errors[4] = "<span style='color:red'>Please enter your password!</span>";
         errors[5] = "<span style='color:red'>Please confirm your password!</span>";
         // update error array with error message
-        for (i in inputs) {
-            var errMessage = errors[i];
-            var div = divs[i];
-            if (inputs[i] == "")
-                document.getElementById(div).innerHTML = errMessage;
-            else if (i == 2) {
-                var atpos = inputs[i].indexOf("@");
-                var dotpos = inputs[i].lastIndexOf(".");
-                if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= inputs[i].length)
-                    document.getElementById('errEmail').innerHTML 
-                      = "<span style='color: red'>Enter a valid email address!</span>";
-                else
-                    document.getElementById(div).innerHTML = "OK!";
-            } else if (i == 5) {
-                var first = document.getElementById('password').value;
-                var second = document.getElementById('confirm').value;
-                if (second != first)
-                    document.getElementById('errConfirm').innerHTML 
-                      = "<span style='color: red'>Your passwords don't match!</span>";
-                else
-                    document.getElementById(div).innerHTML = "OK!";
-            } else
-                document.getElementById(div).innerHTML = "OK!";
+      
+        
+        if (z == 0){
+          if (inputs[z] == "")
+            document.getElementById(div).innerHTML = errMessage;
+        }
+        else if (z == 1){
+          if (inputs[z] == "")
+            document.getElementById(div).innerHTML = errMessage;
+        }
+        else if (z == 2){
+          if (inputs[z] == "")
+            document.getElementById(div).innerHTML = errMessage;
+          else{
+              var atpos = inputs[z].indexOf("@");
+                  var dotpos = inputs[z].lastIndexOf(".");
+                  if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= inputs[z].length)
+                      document.getElementById('errEmail').innerHTML 
+                        = "<span style='color: red'>Enter a valid email address!</span>";
+                  else
+                      document.getElementById(div).innerHTML = "OK!";
+          }
+        }
+        else if (z == 3){
+          if (inputs[z] == "")
+                  document.getElementById(div).innerHTML = errMessage;
+        }
+        else if (z == 4){
+          if (inputs[z] == "")
+                  document.getElementById(div).innerHTML = errMessage;
+        }
+        else if (z == 5){
+          if (inputs[z] == "")
+                  document.getElementById(div).innerHTML = errMessage;
+          else{
+            var first = document.getElementById('password').value;
+                  var second = document.getElementById('confirm').value;
+                  if (second != first)
+                     document.getElementById('errConfirm').innerHTML 
+                       = "<span style='color: red'>Your passwords don't match!</span>";
+                  else
+                      document.getElementById(div).innerHTML = "OK!";
+          }
+        }
+        else{
+          for (i in inputs) {
+              var errMessage = errors[i];
+              var div = divs[i];
+              if (inputs[i] == "")
+                  document.getElementById(div).innerHTML = errMessage;
+              else if (i == 2) {
+                  var atpos = inputs[i].indexOf("@");
+                  var dotpos = inputs[i].lastIndexOf(".");
+                  if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= inputs[i].length)
+                      document.getElementById('errEmail').innerHTML 
+                        = "<span style='color: red'>Enter a valid email address!</span>";
+                  else
+                      document.getElementById(div).innerHTML = "OK!";
+              } else if (i == 5) {
+                  var first = document.getElementById('password').value;
+                  var second = document.getElementById('confirm').value;
+                  if (second != first)
+                     document.getElementById('errConfirm').innerHTML 
+                       = "<span style='color: red'>Your passwords don't match!</span>";
+                  else
+                      document.getElementById(div).innerHTML = "OK!";
+              } else
+                  document.getElementById(div).innerHTML = "OK!";
+          }
         }
     }
 
