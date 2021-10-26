@@ -178,6 +178,31 @@ function appendTableRow3 (tableobj, col1, col2, col3) {
   tableobj.children[0].appendChild(tr);
 }
 
+function appendTableRow5 (tableobj, col1, col2, col3, col4, col5) {
+  // create column (table division) DOM objects
+  let td1 = document.createElement("td");
+  let td2 = document.createElement("td");
+  let td3 = document.createElement("td");
+  let td4 = document.createElement("td");
+  let td5 = document.createElement("td");
+  // insert content into columns
+  td1.innerHTML = col1;
+  td2.innerHTML = col2;
+  td3.innerHTML = col3;
+  td4.innerHTML = col4;
+  td5.innerHTML = col5;
+  // create table row DOM object
+  let tr = document.createElement("tr");
+  // append table divisions (columns) to table row
+  tr.appendChild(td1);
+  tr.appendChild(td2);
+  tr.appendChild(td3);
+  tr.appendChild(td4);
+  tr.appendChild(td5);
+  // append the row to the tbody element in the table
+  tableobj.children[0].appendChild(tr);
+}
+
 // return a DOM object containing an empty table (with tbody element)
 function createTable(id) {
   let table = document.createElement("table");
