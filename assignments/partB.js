@@ -7,7 +7,7 @@ let person = {
   city: "Townsville",
   State: "MI",
   zipCode: "12345",
-  fullName: function() {return this.firstName  + " " + person.lastName}
+  fullName: function() {return this.firstName  + " " + person.lastName},
   fullAddress: function() {return this.streetAddress + ", " + this.city + ", " + this.State + ", " + this.zipCode}
 }
 document.getElementById("1A").innerHTML = person.fullName();
