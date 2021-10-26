@@ -146,6 +146,11 @@ function displayPenaltyInfo() {
 	window.location.href = "clubPenaltyInfo.html";
 }
 
+function bagCheck() {
+	if (clubs.length() >=15) {
+		alert("You cannot carry more than 15 clubs for competition play.");
+	}
+}
 // ----- Functions (clubDistanceEntry.html) -----
 
 // put precise numbers (not rounded) in stats HTML table
