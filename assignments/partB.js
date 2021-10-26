@@ -96,10 +96,14 @@ appendTableRow5(table2b,"21","22","23","24","25");
         if (z == 0){
           if (inputs[z] == "")
             document.getElementById(div).innerHTML = errMessage;
+          else
+            document.getElementById(div).innerHTML = "OK!";
         }
         else if (z == 1){
           if (inputs[z] == "")
             document.getElementById(div).innerHTML = errMessage;
+          else
+                      document.getElementById(div).innerHTML = "OK!";
         }
         else if (z == 2){
           if (inputs[z] == "")
@@ -117,10 +121,14 @@ appendTableRow5(table2b,"21","22","23","24","25");
         else if (z == 3){
           if (inputs[z] == "")
                   document.getElementById(div).innerHTML = errMessage;
+          else
+                      document.getElementById(div).innerHTML = "OK!";
         }
         else if (z == 4){
           if (inputs[z] == "")
                   document.getElementById(div).innerHTML = errMessage;
+          else
+                      document.getElementById(div).innerHTML = "OK!";
         }
         else if (z == 5){
           if (inputs[z] == "")
