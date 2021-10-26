@@ -33,6 +33,7 @@ function loadClubDistances() {
 	// if "clubs" array already exists, load it from local storage
 	if (localStorage.getItem("clubs")) {
 		clubs = JSON.parse(localStorage.getItem("clubs"));
+		bagCheck();
 	}
 	// otherwise create new "clubs" array, using resetAllClubs()
 	else {
