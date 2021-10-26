@@ -3,16 +3,22 @@ let person = {
   firstName: "Jane",
   lastName: "Doe",
   age: 45,
+  streetAddress: "123 Main Street",
+  city: "Townsville",
+  State: "MI",
+  zipCode: "12345",
   fullName: function() {return this.firstName  + " " + person.lastName}
+  fullAddress: function() {return this.streetAddress + ", " + this.city + ", " + this.State + ", " + this.zipCode}
 }
 document.getElementById("1A").innerHTML = person.fullName();
+document.getElementById("1B").innerHTML = person.fullAddress();
 
 // Instructions
 // modify person object, above, as follows
 // add properties, streetAddress, city, state, zipCode
 // add method, fullAddress(), which prints full address on a single line.
 // Display output of fullAddress() in <div id="1B">
-person.streetAddress = "123 Main Street";
+//person.streetAddress = "123 Main Street";
 
 // ==================
 
