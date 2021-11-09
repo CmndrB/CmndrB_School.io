@@ -8,6 +8,8 @@ var covidJson;
 var covidJsObj;
 var newConfirmedOver1000;
 
+var _ = require("lodash");
+
 // AJAX variable
 var xhttp;
 
@@ -108,7 +110,7 @@ function loadContent() {
         = newConfirmedOver1000.map( 
           (x) => x.NewDeaths );
       chartData.options.title.text 
-        = "Covid 19 Hotspots";
+        = "Covid 19 Hotspots" + " " + dayjs().format("MM-DD-YYYY") ;
       myChart = new Chart(ctx, chartData); 
 
     } // end if
@@ -228,14 +230,20 @@ var populations = {
 // new array 
 // loop through all covidJsObj.Countries[i] 
 // push all info i need
-/*
+if (this.readyState == 4 && this.status == 200){
 var newArray = [] 
 for (let i=0; i<covidJsObj.Countries.length; i++) {
   newArray.push({
     "Slug": "\"" + covidJsObj.Countries[i].Slug + "\"",
-    "TotalConfirmed": covidJsObj.Countries[i].TotalConfirmed
-    // continue here...
+    "TotalConfirmed": covidJsObj.Countries[i].TotalConfirmed,
+    "TotalDeaths": covidJsObj.Countries[i].TotalDeaths,
+    "Population": populations[i],
+    "TotalConfirmedPer100000": (covidJsObj.Countries[i].TotalConfirmed     / populations[i]) * 100000
+    
+    let array2 = _.orderBy(newArray,["TotalConfirmedPer100000"], [desc]);
   })
   
+  
 }
-*/
+  
+}
