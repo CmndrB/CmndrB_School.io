@@ -245,5 +245,5 @@ for (let i=0; i<covidJsObj.Countries.length; i++) {
   
   
 }
-  
+   
 }
