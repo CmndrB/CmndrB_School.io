@@ -8,8 +8,6 @@ var covidJson;
 var covidJsObj;
 var newConfirmedOver1000;
 
-var _ = require("lodash");
-
 // AJAX variable
 var xhttp;
 
@@ -30,6 +28,11 @@ var chartData = {
       backgroundColor: "rgba(255,0,0,0.4)"
     }, {
       label: 'oranges',
+      data: [2, 29, 5, 5, 2, 3, 10],
+      backgroundColor: "rgba(255,140,0,0.4)"
+    },
+              {
+      label: 'bananas',
       data: [2, 29, 5, 5, 2, 3, 10],
       backgroundColor: "rgba(255,140,0,0.4)"
     }]
@@ -97,10 +100,14 @@ function loadContent() {
         = "rgba(100,100,100,0.4)"; // gray
       chartData.data.datasets[1].backgroundColor 
         = "rgba(255,0,0,0.4)"; // red
+      chartData.data.datasets[2].backgroundColor 
+        = "rgba(0,0,255,0.4)"; // blue
       chartData.data.datasets[0].label  
         = 'new cases';
       chartData.data.datasets[1].label  
         = 'new deaths';
+     chartData.data.datasets[2].label  
+        = 'total confirmed per 100000';
       chartData.data.labels  
         = newConfirmedOver1000.map( (x) => x.Slug );
       chartData.data.datasets[0].data  
@@ -230,20 +237,18 @@ var populations = {
 // new array 
 // loop through all covidJsObj.Countries[i] 
 // push all info i need
-if (this.readyState == 4 && this.status == 200){
+
+/*if (this.readyState == 4 && this.status == 200){
 var newArray = [] 
 for (let i=0; i<covidJsObj.Countries.length; i++) {
   newArray.push({
     "Slug": "\"" + covidJsObj.Countries[i].Slug + "\"",
-    "TotalConfirmed": covidJsObj.Countries[i].TotalConfirmed,
+    "TotalConfirmed": covidJsObj.Countries[i].TotalConfirmed
     "TotalDeaths": covidJsObj.Countries[i].TotalDeaths,
     "Population": populations[i],
     "TotalConfirmedPer100000": (covidJsObj.Countries[i].TotalConfirmed     / populations[i]) * 100000
-    
-    let array2 = _.orderBy(newArray,["TotalConfirmedPer100000"], [desc]);
   })
   
-  
 }
-   
-}
+let array2 = _.orderBy(newArray,["TotalConfirmedPer100000"], [desc]);
+}*/
